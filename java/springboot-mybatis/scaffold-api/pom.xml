@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -14,6 +14,15 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.scaffold.springboot.mybatis</groupId>
+            <artifactId>scaffold-mbg</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.scaffold.springboot.mybatis</groupId>
+            <artifactId>scaffold-common</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
@@ -26,24 +35,12 @@
             <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.scaffold.springboot.mybatis</groupId>
-            <artifactId>scaffold-mbg</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.scaffold.springboot.mybatis</groupId>
-            <artifactId>scaffold-common</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

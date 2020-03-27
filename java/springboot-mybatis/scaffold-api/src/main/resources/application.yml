@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: prod
+  datasource:
+    hikari:
+      minimum-idle: 5
+      connection-timeout: 15000
+      maximum-pool-size: 20
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    default-property-inclusion: non_null
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:/mapper/**/*.xml
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+application:
+  basePackage: com.scaffold.springboot.mybatis
